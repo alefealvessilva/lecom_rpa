@@ -2,6 +2,10 @@
 
 Automação corporativa com Playwright, Tkinter e banco embutido SQLite3 para extração programada de relatórios da plataforma Lecom, suportando múltiplos endpoints, agendamento cíclico (trigger inteligente) com proteção contra queda de sessão e geração de executável autônomo (.exe).
 
+<p align="center">
+  <img src="assets/appView.png" alt="Interface Gráfica asclabs RPA Suite" width="750" />
+</p>
+
 ---
 
 ## 📁 Estrutura de Arquivos
@@ -38,6 +42,12 @@ Todas as configurações e tarefas ficam salvas localmente no banco de dados SQL
 - **Perfil de Navegação (Chrome Profile):** Diretório onde tokens SSO, cookies e preferências de sessão ficam mantidos.
 - **Intervalo da Trigger:** Frequência de repetição cíclica configurável em minutos.
 - **Fila de Endpoints (Em branco por padrão):** O aplicativo inicia limpo, permitindo que cada usuário cadastre suas próprias pesquisas salvas e destinos de relatório.
+
+> [!IMPORTANT]
+> **Padrão Obrigatório de Nomenclatura das Pesquisas Salvas no Lecom:**
+> 1. **Utilize `snake_case`:** Sempre cadastre os identificadores com letras minúsculas e separadas por underline (ex: `rpa_sol_compras`, `rpa_cad_abast`).
+> 2. **Limite Reduzido de Caracteres:** Mantenha os nomes curtos e objetivos (máximo recomendado de 15 a 20 caracteres), utilizando abreviações.
+> 3. **Prevenção de Falhas no DOM:** Nomes excessivamente longos, com espaços ou acentos sofrem truncamento visual na aba *"Pesquisas salvas"* do Lecom, impedindo que o motor Playwright localize e clique no elemento HTML correspondente na árvore DOM.
 
 ---
 
