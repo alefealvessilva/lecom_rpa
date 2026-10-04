@@ -1,0 +1,58 @@
+# ==============================================================================
+# asclabs RPA Suite • .gitignore
+# ==============================================================================
+
+# Ambientes Virtuais Python
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Bytecode e Caches Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Banco de Dados Local (LGPD / Dados do Usuário)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+rpa_dados.db
+
+# Artefatos de Build e Executáveis
+build/
+dist/
+*.spec
+
+# Perfis de Navegação, Sessões e Tokens Playwright / Chrome
+Playwright_Profile/
+Profile/
+*.session
+*.cookies
+*.log
+
+# Arquivos de Teste / Exportações Locais
+*.xlsx
+*.xls
+*.csv
+relatorios/
+downloads/
+
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos do Sistema Operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
